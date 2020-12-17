@@ -1,0 +1,6 @@
+[submodule "NetBinSerializer"]
+	path = NetBinSerializer
+	url = https://github.com/AndreevNikita/NetBinSerializer.git
+[submodule "InSharp"]
+	path = InSharp
+	url = https://github.com/AndreevNikita/InSharp.git
