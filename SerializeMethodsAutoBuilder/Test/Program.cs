@@ -25,11 +25,13 @@ namespace Test {
 		public string Name { get; set; }
 		public List<string> Hobbies { get; set;}
 		public Dictionary<string, Dictionary<string, string>> KnownWords { get; private set; }
+		private int[,] matrix;
 		
 		public MyObject(Vector pos, string name, params string[] hobbies) {
 			this.Pos = pos;
 			this.Name = name;
 			this.Hobbies = new List<string>(hobbies);
+			this.matrix = new int[,]{ {1, 2, 1}, {2, 4, 2}, {1, 2, 1} };
 			KnownWords = new Dictionary<string, Dictionary<string, string>>(); 
 		}
 
@@ -41,7 +43,14 @@ namespace Test {
 				Console.Write(index == 0 ? $"{Hobbies[index]}" : (index != Hobbies.Count - 1 ? $", {Hobbies[index]}" : $" and {Hobbies[index]}\n"));
 			Console.WriteLine("I was translated by bytes array! It means, that I can be translated by network");
 
-			
+			Console.WriteLine("So it's my matrix: ");
+			for(int i = 0; i < matrix.GetLength(0); i++) { 
+				for(int j = 0; j < matrix.GetLength(1); j++) { 
+					Console.Write($"{matrix[i, j]} ");
+				}
+				Console.WriteLine();
+			}
+
 			Random rand = new Random();
 			string[] languagesArray = KnownWords.Keys.ToArray();
 			if(languagesArray.Length == 0) { 
@@ -58,7 +67,37 @@ namespace Test {
 
 	class Program {
 		static void Main(string[] args) {
-			SerializeMethods methods = SMAB.BuildSerializeMethods(typeof(MyObject));
+			//SMAB.ENABLE_LISTING = true;
+			Console.WriteLine("- Disable cache test");
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+
+			test(false);
+			test(false);
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.WriteLine("- Enable cache test");
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			test(true);
+			test(true);
+
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.WriteLine("- Test serializer and nulls");
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Console.WriteLine(String.Concat(Enumerable.Repeat("-", 100).ToArray()));
+			Test2.test();
+			Console.ReadKey();
+		}
+
+		public static void test(bool enableCache) { 
+			ISerializationMethods methods = new SMAB().getSerializationMethods(typeof(MyObject), enableCache);
 
 			MyObject writeObject = new MyObject(new Vector { x = 4, y = 3, z = 5 }, "Tom", "to play in computer games", "eat testy food", "code");
 			writeObject.KnownWords["russian"] = new Dictionary<string, string> { 
@@ -69,22 +108,11 @@ namespace Test {
 			};
 			
 			SerializeStream sstream = new SerializeStream();
-			methods.serializeMethod(writeObject, sstream);
+			methods.serialize(sstream, writeObject);
 
 			Console.WriteLine();
 			SerializeStream dstream = new SerializeStream(sstream.getBytes());
-			((MyObject)methods.deserializeMethod(dstream)).sayHello();
-			Console.ReadKey();
-		}
-
-		public static object readVector(SerializeStream ds) { 
-			object obj;
-			Vector vec = (Vector)FormatterServices.GetUninitializedObject(typeof(Vector));
-			vec.x = ds.readInt32();
-			vec.y = ds.readInt32();
-			vec.z = ds.readInt32();
-			obj = vec;
-			return obj;
+			((MyObject)methods.deserialize(dstream)).sayHello();
 		}
 
 	}
