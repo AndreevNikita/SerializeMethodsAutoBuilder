@@ -97,7 +97,7 @@ namespace Test {
 		}
 
 		public static void test(bool enableCache) { 
-			ISerializationMethods methods = new SMAB().getSerializationMethods(typeof(MyObject), enableCache);
+			SerializationMethodsBase methods = new SMAB().getSerializationMethods(typeof(MyObject), enableCache);
 
 			MyObject writeObject = new MyObject(new Vector { x = 4, y = 3, z = 5 }, "Tom", "to play in computer games", "eat testy food", "code");
 			writeObject.KnownWords["russian"] = new Dictionary<string, string> { 
@@ -112,7 +112,8 @@ namespace Test {
 
 			Console.WriteLine();
 			SerializeStream dstream = new SerializeStream(sstream.getBytes());
-			((MyObject)methods.deserialize(dstream)).sayHello();
+			MyObject readObject = ((MyObject)methods.deserialize(dstream));
+			readObject.sayHello();
 		}
 
 	}

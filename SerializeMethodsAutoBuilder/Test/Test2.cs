@@ -11,24 +11,31 @@ namespace Test {
 	class Friend { 
 
 		string name;
-		Friend friend;
+		public Friend friend;
 
 		public Friend(string name, Friend friend = null) { 
 			this.name = name;
 			this.friend = friend;
 		}
 
+		const int MAX_PRINT_DEPTH = 16;
+
 		public void print() {
-			
-			Friend currentDuck = this;
-			while(currentDuck != null) {
-				Console.WriteLine(currentDuck == this ? $"Hello! My name is {currentDuck.name}!" : $"His name is {currentDuck.name}");
-				if(currentDuck.friend != null) {
-					Console.WriteLine(currentDuck == this ? "I have a friend!" : "He has a friend!");
+			int counter = 0;
+			Friend currentFriend = this;
+			while(currentFriend != null) {
+				Console.WriteLine(currentFriend == this ? $"Hello! My name is {currentFriend.name}!" : $"His name is {currentFriend.name}");
+				if(currentFriend.friend != null) {
+					Console.WriteLine(currentFriend == this ? "I have a friend!" : "He has a friend!");
 				} else { 
-					Console.WriteLine(currentDuck == this ? "I have no friend :(" : "He has no friend :(");
+					Console.WriteLine(currentFriend == this ? "I have no friend :(" : "He has no friend :(");
 				}
-				currentDuck = currentDuck.friend;
+				currentFriend = currentFriend.friend;
+				counter++; 
+				if(counter == MAX_PRINT_DEPTH) { 
+					Console.WriteLine("...");
+					break;
+				}
 			}
 
 		}
@@ -42,6 +49,16 @@ namespace Test {
 			Friend friend = new Friend("Tom", new Friend("Bob", new Friend("Robin", new Friend("Marry"))));
 			SerializeStream sstream = new SerializeStream();
 			Serializer.serialize<Friend>(sstream, friend);
+			Serializer.deserialize<Friend>(new SerializeStream(sstream.getBytes())).print();
+
+			Console.WriteLine();
+			Console.WriteLine($"{String.Concat(Enumerable.Repeat("-", 32).ToArray())}Cicles test{String.Concat(Enumerable.Repeat("-", 32).ToArray())}");
+			Friend friend1 = new Friend("VIctor", null);
+			Friend friend2 = new Friend("Dan", friend1);
+			friend1.friend = friend2;
+			Friend cicleFriend = new Friend("Aurora", friend1);
+			sstream = new SerializeStream();
+			Serializer.serialize<Friend>(sstream, cicleFriend);
 			Serializer.deserialize<Friend>(new SerializeStream(sstream.getBytes())).print();
 		}
 	}
