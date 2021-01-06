@@ -1,5 +1,5 @@
 # SerializeMethodsAutoBuilder (SMAB)
-*ISerializationMethodsBuilder* realization for (NetBinSerializer)[https://github.com/AndreevNikita/NetBinSerializer] library.
+*ISerializationMethodsBuilder* realization for [NetBinSerializer](https://github.com/AndreevNikita/NetBinSerializer) library.
 
 - Makes difficult types (custom classes and structures) serialization/deserialization possible with NetBinSerializer.
 
