@@ -52,3 +52,6 @@ MyObject dobj = (MyObject)methods.deserialize(dstream); //Your deserialized obje
 ## Full examples and tests
 * [Serialization/deserialization example and test](https://github.com/AndreevNikita/SerializeMethodsAutoBuilder/blob/main/SerializeMethodsAutoBuilder/Test/Program.cs)
 * [Nulls and reference cycles test](https://github.com/AndreevNikita/SerializeMethodsAutoBuilder/blob/main/SerializeMethodsAutoBuilder/Test/Test2.cs)
+
+## Also
+The library uses [InSharp](https://github.com/AndreevNikita/InSharp) to compile serialize/deserialize methods
