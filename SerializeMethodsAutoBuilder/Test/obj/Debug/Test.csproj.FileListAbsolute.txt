@@ -1,0 +1,16 @@
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\Test.exe.config
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\Test.exe
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\Test.pdb
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\NetBinSerializer.dll
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\SerializeMethodsAutoBuilder.dll
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\InSharp.dll
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\LowLevelOpsHelper.dll
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\NetBinSerializer.pdb
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\SerializeMethodsAutoBuilder.pdb
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\InSharp.pdb
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\bin\Debug\LowLevelOpsHelper.pdb
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\obj\Debug\Test.exe
+C:\Users\Nick\Documents\GitHub\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\Test\obj\Debug\Test.pdb
