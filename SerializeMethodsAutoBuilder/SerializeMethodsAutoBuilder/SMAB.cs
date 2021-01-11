@@ -228,7 +228,7 @@ namespace SerializeMethodsAutoBuilder {
 				deserializeGen.Line(deserializeGen.args[1].CallMethod(addObjectDesreializationContextMethodInfo, deserializeObject));
 			}
 			
-			foreach(FieldInfo fieldInfo in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)) { 
+			foreach(FieldInfo fieldInfo in type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic).OrderBy((FieldInfo fieldInfo) => fieldInfo.MetadataToken)) { 
 				SerializationRule fieldRule = (SerializationRule)fieldInfo.GetCustomAttribute(typeof(SerializationRule));
 				if(!(fieldRule != null ? fieldRule.isSerializable : defaultIsSerializable))
 					continue;
