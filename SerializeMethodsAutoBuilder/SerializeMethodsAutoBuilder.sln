@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeMethodsAutoBuilder", "SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder.csproj", "{911D3844-F0F0-4827-96EC-F9C2FE1E81DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeMethodsAutoBuilder", "SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder.csproj", "{BDFC003E-42CA-4441-8CBE-FDB02541F372}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{56976A4E-587C-4DA9-9E8A-4E85182E2131}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{B11F13E9-AE0A-4A00-96FE-E70EBDC190A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBinSerializer", "..\NetBinSerializer\NetBinSerializer\NetBinSerializer\NetBinSerializer.csproj", "{DC36AE91-5386-4BDB-A720-0F482F78A6BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetBinSerializer", "..\NetBinSerializer\NetBinSerializer\NetBinSerializer\NetBinSerializer.csproj", "{B9328ECC-31DA-4306-8677-B22492DAF375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InSharp", "..\InSharp\InSharp\InSharp\InSharp.csproj", "{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InSharp", "..\InSharp\InSharp\InSharp\InSharp.csproj", "{D859E8DD-31AC-478B-925D-990BBFD34D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C2B1CD05-6160-4349-B460-1463F2437804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{7A7465C5-9C5B-4A4C-A9CE-44EFE6EC2255}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LowLevelOpsHelper", "..\InSharp\InSharp\LowLevelOpsHelper\LowLevelOpsHelper.csproj", "{30466EC4-EE0A-48DA-A619-DAE053343704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,31 +21,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{911D3844-F0F0-4827-96EC-F9C2FE1E81DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{911D3844-F0F0-4827-96EC-F9C2FE1E81DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{911D3844-F0F0-4827-96EC-F9C2FE1E81DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{911D3844-F0F0-4827-96EC-F9C2FE1E81DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC36AE91-5386-4BDB-A720-0F482F78A6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC36AE91-5386-4BDB-A720-0F482F78A6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC36AE91-5386-4BDB-A720-0F482F78A6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC36AE91-5386-4BDB-A720-0F482F78A6BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2B1CD05-6160-4349-B460-1463F2437804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2B1CD05-6160-4349-B460-1463F2437804}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2B1CD05-6160-4349-B460-1463F2437804}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2B1CD05-6160-4349-B460-1463F2437804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFC003E-42CA-4441-8CBE-FDB02541F372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFC003E-42CA-4441-8CBE-FDB02541F372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFC003E-42CA-4441-8CBE-FDB02541F372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFC003E-42CA-4441-8CBE-FDB02541F372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9328ECC-31DA-4306-8677-B22492DAF375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9328ECC-31DA-4306-8677-B22492DAF375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9328ECC-31DA-4306-8677-B22492DAF375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9328ECC-31DA-4306-8677-B22492DAF375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D859E8DD-31AC-478B-925D-990BBFD34D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D859E8DD-31AC-478B-925D-990BBFD34D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D859E8DD-31AC-478B-925D-990BBFD34D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D859E8DD-31AC-478B-925D-990BBFD34D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7465C5-9C5B-4A4C-A9CE-44EFE6EC2255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7465C5-9C5B-4A4C-A9CE-44EFE6EC2255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7465C5-9C5B-4A4C-A9CE-44EFE6EC2255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7465C5-9C5B-4A4C-A9CE-44EFE6EC2255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30466EC4-EE0A-48DA-A619-DAE053343704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30466EC4-EE0A-48DA-A619-DAE053343704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30466EC4-EE0A-48DA-A619-DAE053343704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30466EC4-EE0A-48DA-A619-DAE053343704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DC36AE91-5386-4BDB-A720-0F482F78A6BD} = {56976A4E-587C-4DA9-9E8A-4E85182E2131}
-		{662450A7-9C72-4F49-AA4A-FDE4A96A0FE6} = {56976A4E-587C-4DA9-9E8A-4E85182E2131}
+		{B9328ECC-31DA-4306-8677-B22492DAF375} = {B11F13E9-AE0A-4A00-96FE-E70EBDC190A5}
+		{D859E8DD-31AC-478B-925D-990BBFD34D6B} = {B11F13E9-AE0A-4A00-96FE-E70EBDC190A5}
+		{30466EC4-EE0A-48DA-A619-DAE053343704} = {B11F13E9-AE0A-4A00-96FE-E70EBDC190A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46557F12-1254-4AAF-9DCC-9C200DBABE17}
+		SolutionGuid = {3FE56F81-4F23-45B0-86C0-87439E3A6204}
 	EndGlobalSection
 EndGlobal
