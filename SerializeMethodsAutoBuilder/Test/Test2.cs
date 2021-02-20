@@ -45,11 +45,11 @@ namespace Test {
 	class Test2 {
 
 		public static void test() { 
-			Serializer.useMethodsBuilder(new SMAB());
+			Serializer.UseMethodsBuilder(new SMAB());
 			Friend friend = new Friend("Tom", new Friend("Bob", new Friend("Robin", new Friend("Marry"))));
 			SerializeStream sstream = new SerializeStream();
-			Serializer.serialize<Friend>(sstream, friend);
-			Serializer.deserialize<Friend>(new SerializeStream(sstream.getBytes())).print();
+			Serializer.Serialize<Friend>(sstream, friend);
+			Serializer.Deserialize<Friend>(new SerializeStream(sstream.GetBytes())).print();
 
 			Console.WriteLine();
 			Console.WriteLine($"{String.Concat(Enumerable.Repeat("-", 32).ToArray())}Cicles test{String.Concat(Enumerable.Repeat("-", 32).ToArray())}");
@@ -58,8 +58,8 @@ namespace Test {
 			friend1.friend = friend2;
 			Friend cicleFriend = new Friend("Aurora", friend1);
 			sstream = new SerializeStream();
-			Serializer.serialize<Friend>(sstream, cicleFriend);
-			Serializer.deserialize<Friend>(new SerializeStream(sstream.getBytes())).print();
+			Serializer.Serialize<Friend>(sstream, cicleFriend);
+			Serializer.Deserialize<Friend>(new SerializeStream(sstream.GetBytes())).print();
 		}
 	}
 }
