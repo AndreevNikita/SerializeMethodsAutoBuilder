@@ -2,11 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Nikita Andreev</Authors>
+    <Copyright>Nikita Andreev</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageTags>c# serialization reflection</PackageTags>
+    <Description>C# library for auto build serialize and deserialize to byte array methods for given type (based on NetBinSerializer).</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\InSharp\InSharp\InSharp\InSharp.csproj" />
     <ProjectReference Include="..\..\NetBinSerializer\NetBinSerializer\NetBinSerializer\NetBinSerializer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SerializeMethodsAutoBuilder</id>
+    <version>1.0.0</version>
+    <authors>Nikita Andreev</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <description>C# library for auto build serialize and deserialize to byte array methods for given type (based on NetBinSerializer).</description>
+    <copyright>Nikita Andreev</copyright>
+    <tags>c# serialization reflection</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="InSharp" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="NetBinSerializer" version="1.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Nick\Documents\repos\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\SerializeMethodsAutoBuilder\bin\Debug\netstandard2.0\SerializeMethodsAutoBuilder.dll" target="lib\netstandard2.0\SerializeMethodsAutoBuilder.dll" />
+    <file src="C:\Users\Nick\Documents\repos\SerializeMethodsAutoBuilder\LICENSE" target="LICENSE" />
+  </files>
+</package>

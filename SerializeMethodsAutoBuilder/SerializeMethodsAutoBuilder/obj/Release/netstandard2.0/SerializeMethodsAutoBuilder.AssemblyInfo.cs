@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nikita Andreev")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Nikita Andreev")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("C# library for auto build serialize and deserialize to byte array methods for giv" +
     "en type (based on NetBinSerializer).")]

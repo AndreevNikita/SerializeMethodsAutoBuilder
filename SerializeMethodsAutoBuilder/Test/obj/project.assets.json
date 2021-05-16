@@ -20,11 +20,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "InSharp/1.0.0": {
+      "InSharp/1.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "LowLevelOpsHelper": "1.0.0",
+          "LowLevelOpsHelper": "1.0.1",
           "System.Reflection.Emit.ILGeneration": "4.7.0",
           "System.Reflection.Emit.Lightweight": "4.7.0"
         },
@@ -35,7 +35,7 @@
           "bin/placeholder/InSharp.dll": {}
         }
       },
-      "LowLevelOpsHelper/1.0.0": {
+      "LowLevelOpsHelper/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
@@ -45,7 +45,7 @@
           "bin/placeholder/LowLevelOpsHelper.dll": {}
         }
       },
-      "NetBinSerializer/1.0.0": {
+      "NetBinSerializer/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
@@ -59,8 +59,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "InSharp": "1.0.0",
-          "NetBinSerializer": "1.0.0"
+          "InSharp": "1.0.2",
+          "NetBinSerializer": "1.0.1"
         },
         "compile": {
           "bin/placeholder/SerializeMethodsAutoBuilder.dll": {}
@@ -188,17 +188,17 @@
         "version.txt"
       ]
     },
-    "InSharp/1.0.0": {
+    "InSharp/1.0.2": {
       "type": "project",
       "path": "../../InSharp/InSharp/InSharp/InSharp.csproj",
       "msbuildProject": "../../InSharp/InSharp/InSharp/InSharp.csproj"
     },
-    "LowLevelOpsHelper/1.0.0": {
+    "LowLevelOpsHelper/1.0.1": {
       "type": "project",
       "path": "../../InSharp/InSharp/LowLevelOpsHelper/LowLevelOpsHelper.csproj",
       "msbuildProject": "../../InSharp/InSharp/LowLevelOpsHelper/LowLevelOpsHelper.csproj"
     },
-    "NetBinSerializer/1.0.0": {
+    "NetBinSerializer/1.0.1": {
       "type": "project",
       "path": "../../NetBinSerializer/NetBinSerializer/NetBinSerializer/NetBinSerializer.csproj",
       "msbuildProject": "../../NetBinSerializer/NetBinSerializer/NetBinSerializer/NetBinSerializer.csproj"
@@ -220,11 +220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nick\\Documents\\GitHub\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\Test.csproj",
+      "projectPath": "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nick\\Documents\\GitHub\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\obj\\",
+      "outputPath": "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -241,8 +241,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Nick\\Documents\\GitHub\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder.csproj": {
-              "projectPath": "C:\\Users\\Nick\\Documents\\GitHub\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder.csproj"
+            "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder.csproj": {
+              "projectPath": "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder.csproj"
             }
           }
         }
@@ -271,7 +271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
