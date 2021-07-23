@@ -72,7 +72,7 @@
           "bin/placeholder/LowLevelOpsHelper.dll": {}
         }
       },
-      "NetBinSerializer/1.0.1": {
+      "NetBinSerializer/1.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
@@ -355,7 +355,7 @@
       "path": "../../InSharp/InSharp/LowLevelOpsHelper/LowLevelOpsHelper.csproj",
       "msbuildProject": "../../InSharp/InSharp/LowLevelOpsHelper/LowLevelOpsHelper.csproj"
     },
-    "NetBinSerializer/1.0.1": {
+    "NetBinSerializer/1.0.2": {
       "type": "project",
       "path": "../../NetBinSerializer/NetBinSerializer/NetBinSerializer/NetBinSerializer.csproj",
       "msbuildProject": "../../NetBinSerializer/NetBinSerializer/NetBinSerializer/NetBinSerializer.csproj"
@@ -365,14 +365,14 @@
     ".NETStandard,Version=v2.0": [
       "InSharp >= 1.0.2",
       "NETStandard.Library >= 2.0.3",
-      "NetBinSerializer >= 1.0.1"
+      "NetBinSerializer >= 1.0.2"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Nick\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "C:\\Users\\Nick\\Documents\\repos\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder\\SerializeMethodsAutoBuilder.csproj",
       "projectName": "SerializeMethodsAutoBuilder",
